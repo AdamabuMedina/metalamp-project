@@ -1,0 +1,141 @@
+.colors-types {
+  padding-top: 63px;
+
+  &__container {
+    padding: 0 30px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__colors {
+    border-radius: 6px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-dark-shade);
+
+    &--100 {
+      background-color: var(--color-dark-shade);
+    }
+
+    &--75 {
+      background-color: var(--color-dark-shade75);
+    }
+
+    &--50 {
+      background-color: var(--color-dark-shade50);
+    }
+
+    &--25 {
+      background-color: var(--color-dark-shade25);
+    }
+
+    &--05 {
+      background-color: var(--color-dark-shade05);
+    }
+
+    &--primary {
+      background-color: var(--color-primary);
+    }
+
+    &--green {
+      background-color: var(--color-green);
+    }
+  }
+
+  &__сolor-names {
+    margin-left: 40px;
+    padding-top: 8px;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 28px;
+      color: var(--color-dark-shade);
+
+      span {
+        font-weight: 400;
+        font-size: 19px;
+      }
+    }
+  }
+
+  &__right {
+    &__list {
+      max-width: 434px;
+    }
+
+    &__item {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__span {
+      color: var(--color-dark-shade25);
+
+      &--h1 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      &--h2 {
+        font-size: 19px;
+        line-height: 23px;
+      }
+
+      &--h3 {
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      &--body {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &__title {
+      margin-left: 25px;
+      font-weight: 700;
+      color: var(--color-dark-shade);
+
+      &--h1 {
+        font-size: 26px;
+        line-height: 29px;
+      }
+
+      &--h2 {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      &--h3 {
+        font-size: 16px;
+        line-height: 15px;
+      }
+
+      &--body {
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: var(--color-dark-shade75);
+      }
+    }
+  }
+}
