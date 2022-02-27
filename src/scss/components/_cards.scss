@@ -1,0 +1,36 @@
+.cards {
+  padding-top: 67px;
+  padding-bottom: 100px;
+
+  &__container {
+    padding: 0 20px;
+  }
+
+  &__number {
+    width: 380px;
+    max-width: 100%;
+    padding: 40px 30px;
+    border-radius: 4px;
+    background-color: var(--color-light);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.cards-form {
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__select {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}

@@ -128,17 +128,17 @@ a {
   border-width: 1px;
   border-color: transparent;
   border-radius: 22px;
-  padding: 15px 39px;
+  padding: 14px 87px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--color-light);
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &--fill {
-    background-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
     // &:focus {
     //   outline: 2px solid var(--color-primary);
@@ -154,30 +154,30 @@ a {
     // }
   }
 
-  &--stroke {
-    &-light {
-      border-color: var(--color-light);
-      color: var(--color-light);
-    }
+  // &--stroke {
+  //   &-light {
+  //     border-color: var(--color-light);
+  //     color: var(--color-light);
+  //   }
 
-    &-primary {
-      border-color: var(--color-primary);
-      color: var(--color-primary);
-    }
+  //   &-primary {
+  //     border-color: var(--color-primary);
+  //     color: var(--color-primary);
+  //   }
 
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
-    }
+  //   &:focus {
+  //     outline: 2px solid var(--color-primary);
+  //     outline-offset: 2px;
+  //   }
 
-    &:hover {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
-    }
+  //   &:hover {
+  //     border-color: var(--color-primary);
+  //     background-color: var(--color-primary);
+  //   }
 
-    &:active {
-      border-color: var(--color-primary);
-      background-color: var(--color-active);
-    }
-  }
+  //   &:active {
+  //     border-color: var(--color-primary);
+  //     background-color: var(--color-active);
+  //   }
+  // }
 }
