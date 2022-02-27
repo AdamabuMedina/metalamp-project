@@ -32,6 +32,19 @@
   justify-content: space-between;
 }
 
+
+@mixin flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {
@@ -45,8 +58,7 @@ $browser-context: 16; // Default
     /* stylelint-disable-next-line function-comma-newline-after */
     "#{$pathToImage}.avif"type("image/avif"),
     "#{$pathToImage}.webp"type("image/webp"),
-    "#{$pathToImage}.jpg"type("image/jpg")
-  );
+    "#{$pathToImage}.jpg"type("image/jpg"));
 }
 
 @mixin footerToBottom {
