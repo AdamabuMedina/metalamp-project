@@ -6,45 +6,105 @@
     padding: 0 20px;
   }
 
+  &-left {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__number {
     width: 380px;
     max-width: 100%;
-    padding: 40px 30px;
+    padding: 40px 30px 30px;
     border-radius: 4px;
     background-color: var(--color-light);
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: var(--shadow-primary);
-  }
-}
 
-.cards-form {
-
-  &__title {
-    margin-bottom: 21px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
   }
 
-  &__item {
-    display: flex;
-    justify-content: space-between;
+  &-register {
+    margin-bottom: 7px;
   }
 
-  &__select {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 32px;
+  &-radio {
+    margin-bottom: 22px;
   }
 
-  &__input {
-    position: relative;
+  &-form {
+    &__field {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
 
-    &::-webkit-calendar-picker-indicator {
-      position: absolute;
-      top: 60%;
-      right: 8px;
-      transform: translateY(-50%);
-      background-image: url("../../img/drop-arrow.svg");
-      background-repeat: no-repeat;
-      background-size: 13px;
+    &__title {
+      margin-bottom: 21px;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+
+      &--column {
+        flex-direction: column;
+        margin-bottom: 19px;
+      }
+    }
+
+    &__select {
+      position: relative;
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      width: 320px;
+      color: var(--color-dark-shade25);
+      padding-left: 13px;
+    }
+
+    &__date {
+      position: relative;
+      width: 150px;
+      padding-left: 13px;
+      text-transform: uppercase;
+      color: var(--color-dark-shade75);
+
+      &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 60%;
+        right: 8px;
+        cursor: pointer;
+        padding-left: 100%;
+        transform: translateY(-50%);
+        background-image: url("../../img/drop-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 13px;
+      }
+
+      &--big {
+        width: 320px;
+
+        &::-webkit-calendar-picker-indicator {
+          background-image: none;
+        }
+      }
+    }
+
+    &__radio {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &-details {
+    .form-field__caption {
+      display: inline-block;
+      margin-bottom: 4px;
     }
   }
 }

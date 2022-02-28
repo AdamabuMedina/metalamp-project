@@ -13,13 +13,9 @@
   &__input {
     border: 1px solid var(--color-dark-shade25);
     border-radius: 4px;
-    padding-left: 15px;
-    width: 150px;
     height: 44px;
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;
-    color: var(--color-dark-shade75);
 
     &::placeholder {
       color: var(--color-dark-shade75);

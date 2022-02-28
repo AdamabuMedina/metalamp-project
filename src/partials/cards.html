@@ -1,44 +1,135 @@
 @include("header.html")
 <div class="section cards">
+  <h1 class="visually-hidden">Карточки форм</h1>
   <div class="container cards__container">
-    <h1 class="visually-hidden">Карточки форм</h1>
-    <div class="cards__number">
-      <form action="#" class="cards-form">
-        <h2 class="title title--h2 cards-form__title">
-          Найдём номера под ваши пожелания
-        </h2>
-        <div class="cards-form__item">
-          <label class="form-field cards-form__field">
-            <span class="form-field__caption">Прибытие</span>
-            <input
-              type="date"
-              name="date"
-              class="form-field__input cards-form__input"
-            />
+    <div class="cards-left">
+      <div class="cards__number cards__number--one">
+        <form action="#" class="cards-form">
+          <h2 class="title title--h2 cards-form__title">
+            Найдём номера под ваши пожелания
+          </h2>
+          <div class="cards-form__item">
+            <label class="form-field cards-form__field">
+              <span class="form-field__caption">Прибытие</span>
+              <input
+                type="date"
+                name="date"
+                class="form-field__input cards-form__date"
+              />
+            </label>
+            <label class="form-field cards-form__field">
+              <span class="form-field__caption">Выезд</span>
+              <input
+                type="date"
+                name="date"
+                class="form-field__input cards-form__date"
+              />
+            </label>
+          </div>
+          <label class="form-field cards-form__select">
+            <span class="form-field__caption">Гости</span>
+            <select name="Number_of_guests" class="form-field__select" required>
+              <option value="">Сколько гостей</option>
+              <option value="One">1</option>
+              <option value="Two">2</option>
+              <option value="Tree">3</option>
+              <option value="Four">4</option>
+            </select>
           </label>
-          <label class="form-field cards-form__field">
-            <span class="form-field__caption">Выезд</span>
-            <input
-              type="date"
-              name="date"
-              class="form-field__input cards-form__input"
-            />
+          <button class="btn-reset btn btn--fill form-cards__btn" type="submit">
+            Подобрать номер
+          </button>
+        </form>
+      </div>
+      <div class="cards__number cards__number--two">
+        <form action="#" class="cards-form">
+          <h2 class="title title--h2 cards-form__title">
+            Регистрация аккаунта
+          </h2>
+          <div class="cards-register">
+            <label class="form-field cards-form__field">
+              <input
+                type="text"
+                name="name"
+                class="form-field__input cards-form__input"
+                placeholder="Имя"
+              />
+            </label>
+            <label class="form-field cards-form__field">
+              <input
+                type="text"
+                name="lastName"
+                class="form-field__input cards-form__input"
+                placeholder="Фамилия"
+              />
+            </label>
+          </div>
+
+          <div class="cards-radio">
+            <label class="custom-radio cards-form__radio">
+              <input
+                type="radio"
+                name="contact_method"
+                value="male"
+                class="custom-radio__input"
+                checked
+              />
+              <span class="custom-radio__text">Мужчина</span>
+            </label>
+            <label class="custom-radio cards-form__radio">
+              <input
+                type="radio"
+                name="contact_method"
+                value="famale"
+                class="custom-radio__input"
+              />
+              <span class="custom-radio__text">Женщина</span>
+            </label>
+          </div>
+          <div class="cards-form__item cards-form__item--column">
+            <label class="form-field cards-form__field">
+              <span class="form-field__caption">Дата рождения</span>
+              <input
+                type="date"
+                name="date"
+                class="form-field__input cards-form__date cards-form__date--big"
+              />
+            </label>
+          </div>
+          <div class="cards-details">
+            <span class="form-field__caption">Данные для входа в сервис</span>
+            <label class="form-field cards-form__field">
+              <input
+                type="email"
+                name="email"
+                class="form-field__input cards-form__input"
+                placeholder="Email"
+              />
+            </label>
+            <label class="form-field cards-form__field">
+              <input
+                type="password"
+                name="password"
+                class="form-field__input cards-form__input"
+                placeholder="Пароль"
+              />
+            </label>
+          </div>
+          <label class="form-field cards-form__select">
+            <span class="form-field__caption">Гости</span>
+            <select name="Number_of_guests" class="form-field__select" required>
+              <option value="">Сколько гостей</option>
+              <option value="One">1</option>
+              <option value="Two">2</option>
+              <option value="Tree">3</option>
+              <option value="Four">4</option>
+            </select>
           </label>
-        </div>
-        <label class="form-field cards-form__select">
-          <span class="form-field__caption">Гости</span>
-          <select name="Number_of_guests" class="form-field__select" required>
-            <option value="">Сколько гостей</option>
-            <option value="One">1</option>
-            <option value="Two">2</option>
-            <option value="Tree">3</option>
-            <option value="Four">4</option>
-          </select>
-        </label>
-        <button class="btn-reset btn btn--fill form-cards__btn" type="submit">
-          Подобрать номер
-        </button>
-      </form>
+          <button class="btn-reset btn btn--fill form-cards__btn" type="submit">
+            Подобрать номер
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

@@ -245,3 +245,59 @@ a {
 .choices__list--dropdown {
   background-color: var(--color-light);
 }
+
+.custom-radio {
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-dark-shade75);
+  }
+
+  &__text::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 3px;
+    display: inline-block;
+    border: 1px solid var(--color-dark-shade25);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  &__text::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    background-image: url('../img/check-circle.svg');
+    background-position: center;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__input:checked+&__text::before {
+    border-color: var(--color-primary);
+  }
+
+  &__input:checked+&__text::after {
+    opacity: 1;
+  }
+
+  &__input:focus+&__text {
+    outline: 3px solid var(--color-primary);
+  }
+}
