@@ -137,7 +137,6 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--color-light);
   transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -162,10 +161,11 @@ a {
   &--stroke {
     padding: 14px 22px;
     border-width: 2px;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 
-    &-primary {
-      border-color: var(--color-primary);
-      color: var(--color-primary);
+    &-wide {
+      padding: 14px 15px;
     }
 
 
