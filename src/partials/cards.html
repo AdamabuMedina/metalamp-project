@@ -1,13 +1,24 @@
 @include("header.html")
-<div class="section cards">
+<section class="section cards">
   <h1 class="visually-hidden">Карточки форм</h1>
   <div class="container cards__container">
-    <div class="cards-left">
-      <div class="cards-left__number cards-left__number--one">
+    <div class="cards__flex cards-left">
+      @include("./cards/cards-number-one.html")
+      @include("./cards/cards-number-two.html")
+    </div>
+    <div class="cards__flex cards-centered">
+      <!-- @include("./cards/cards-number-tree.html") -->
+      <!-- @include("./cards/cards-number-two.html") -->
+      <div class="cards-number cards-number--tree">
         <form action="#" class="cards-form">
-          <h2 class="title title--h2 cards-form__title">
-            Найдём номера под ваши пожелания
-          </h2>
+          <div class="cards-titles">
+            <div class="cards-titles__numbers">
+              <span class="cards-titles__number">№</span>
+              <h3 class="title title--h2 cards-titles__title">888</h3>
+              <span class="cards-titles__lux">Люкс</span>
+            </div>
+            <div class="cards-titles__price"><span>9 990₽</span>в сутки</div>
+          </div>
           <div class="cards-form__group">
             <label class="form-field cards-form__field">
               <span class="form-field__caption">Прибытие</span>
@@ -42,101 +53,6 @@
           </button>
         </form>
       </div>
-      <div class="cards-left__number cards-left__number--two">
-        <form action="#" class="cards-form">
-          <h2 class="title title--h2 cards-form__title">
-            Регистрация аккаунта
-          </h2>
-          <div class="cards-form__group cards-form__group--register">
-            <label class="form-field cards-form__field">
-              <input
-                type="text"
-                name="name"
-                class="form-field__input form-field__input--fill cards-form__input"
-                placeholder="Имя"
-              />
-            </label>
-            <label class="form-field cards-form__field">
-              <input
-                type="text"
-                name="lastName"
-                class="form-field__input form-field__input--fill cards-form__input"
-                placeholder="Фамилия"
-              />
-            </label>
-          </div>
-          <div class="cards-form__group cards-form__group--radio">
-            <label class="custom-radio cards-form__radio">
-              <input
-                type="radio"
-                name="contact_method"
-                value="male"
-                class="custom-radio__input"
-                checked
-              />
-              <span class="custom-radio__text">Мужчина</span>
-            </label>
-            <label class="custom-radio cards-form__radio">
-              <input
-                type="radio"
-                name="contact_method"
-                value="famale"
-                class="custom-radio__input"
-              />
-              <span class="custom-radio__text">Женщина</span>
-            </label>
-          </div>
-          <div class="cards-form__group cards-form__group--column">
-            <label class="form-field cards-form__field">
-              <span class="form-field__caption">Дата рождения</span>
-              <input
-                type="date"
-                name="date"
-                class="form-field__input cards-form__date cards-form__date--big"
-              />
-            </label>
-          </div>
-          <div class="cards-form__group cards-form__group--details">
-            <span class="form-field__caption">Данные для входа в сервис</span>
-            <label class="form-field cards-form__field">
-              <input
-                type="email"
-                name="email"
-                class="form-field__input form-field__input--fill cards-form__input"
-                placeholder="Email"
-              />
-            </label>
-            <label class="form-field cards-form__field">
-              <input
-                type="password"
-                name="password"
-                class="form-field__input form-field__input--fill cards-form__input"
-                placeholder="Пароль"
-              />
-            </label>
-          </div>
-          <div class="cards-form__switch">
-            <label class="form-field__switch">
-              <input type="checkbox" />
-              <span
-                class="form-field__switch--slider form-field__switch--round"
-              >
-              </span>
-            </label>
-            <span class="cards-form__text"> Получать спецпредложения </span>
-          </div>
-          <button class="btn-reset btn btn--fill cards-form__btn" type="submit">
-            Перейти к оплате
-            <img src="../img/btn-arrow.svg" alt="Перейти к оплате" />
-          </button>
-          <div class="cards-form__login">
-            <a href="" class="cards-form__account">Уже есть аккаунт на Toxin</a>
-            <button class="btn-reset btn btn--stroke btn--stroke-primary">
-              Войти
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
   </div>
-</div>
+</section>

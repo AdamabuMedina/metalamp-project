@@ -3,164 +3,65 @@
   padding-bottom: 100px;
 
   &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
     padding: 0 20px;
   }
-}
 
-.cards-left {
-  display: flex;
-  flex-direction: column;
-
-  &__number {
-    width: 380px;
-    max-width: 100%;
-    padding: 40px 30px 30px;
-    border-radius: 4px;
-    background-color: var(--color-light);
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: var(--shadow-primary);
-
-    &:not(:last-child) {
-      margin-bottom: 38px;
-    }
-
-    &--two {
-      padding: 40px 30px 27px;
-    }
-  }
-}
-
-.cards-form {
-  &__title {
-    margin-bottom: 21px;
-  }
-
-  &__field {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__group {
+  &__flex {
     display: flex;
+    flex-direction: column;
+  }
+
+  &-titles {
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 
-    &--column {
-      flex-direction: column;
-      margin-bottom: 20px;
+    &__numbers {
+      display: flex;
+      align-items: flex-end;
     }
 
-    &--register {
-      flex-direction: column;
-      margin-bottom: 7px;
+    &__number {
+      margin-bottom: 3px;
+      margin-right: 3px;
+      padding: 0;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
     }
 
-    &--radio {
-      justify-content: flex-start;
-      margin-bottom: 24px;
+    &__lux {
+      margin-bottom: 3px;
+      margin-left: 9px;
+      padding: 0;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: var(--color-primary);
     }
 
-    &--details {
-      flex-direction: column;
+    &__price {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--color-dark-shade50);
 
-      .form-field__caption {
-        display: inline-block;
-        margin-bottom: 5px;
+      span {
+        margin-right: 3px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
       }
     }
   }
-
-  &__select {
-    position: relative;
-    margin-top: 12px;
-    margin-bottom: 30px;
-  }
-
-  &__input {
-    width: 320px;
-    color: var(--color-dark-shade25);
-    padding-left: 13px;
-  }
-
-  &__date {
-    position: relative;
-    width: 150px;
-    padding-left: 13px;
-    text-transform: uppercase;
-    color: var(--color-dark-shade75);
-
-    &::-webkit-calendar-picker-indicator {
-      position: absolute;
-      top: 60%;
-      right: 8px;
-      cursor: pointer;
-      padding-left: 100%;
-      transform: translateY(-50%);
-      background-image: url("../../img/drop-arrow.svg");
-      background-repeat: no-repeat;
-      background-size: 13px;
-    }
-
-    &--big {
-      width: 320px;
-      color: var(--color-dark-shade25);
-
-      &::-webkit-calendar-picker-indicator {
-        background-image: none;
-      }
-    }
-  }
-
-  &__radio {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-
-  &__btn {
-    position: relative;
-    width: 100%;
-    padding: 13px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      position: absolute;
-      right: 11px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  &__switch {
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    margin-bottom: 22px;
-  }
-
-  &__text {
-    display: block;
-    margin-left: 10px;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--color-dark-shade75);
-  }
-
-  &__login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  &__account {
-    display: block;
-    max-width: 190px;
-    width: 100%;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-  }
 }
+
+@import "./cards/cards-form";
+@import "./cards/cards-left";
+@import "./cards/cards-centered";
