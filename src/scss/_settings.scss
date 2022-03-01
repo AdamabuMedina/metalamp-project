@@ -154,32 +154,37 @@ a {
     // }
   }
 
-  // &--stroke {
-  //   &-light {
-  //     border-color: var(--color-light);
-  //     color: var(--color-light);
-  //   }
+  &--stroke {
+    padding: 14px 22px;
+    border-width: 2px;
 
-  //   &-primary {
-  //     border-color: var(--color-primary);
-  //     color: var(--color-primary);
-  //   }
+    &-primary {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
 
-  //   &:focus {
-  //     outline: 2px solid var(--color-primary);
-  //     outline-offset: 2px;
-  //   }
 
-  //   &:hover {
-  //     border-color: var(--color-primary);
-  //     background-color: var(--color-primary);
-  //   }
+    // &-light {
+    //   border-color: var(--color-light);
+    //   color: var(--color-light);
+    // }
 
-  //   &:active {
-  //     border-color: var(--color-primary);
-  //     background-color: var(--color-active);
-  //   }
-  // }
+
+    // &:focus {
+    //   outline: 2px solid var(--color-primary);
+    //   outline-offset: 2px;
+    // }
+
+    // &:hover {
+    //   border-color: var(--color-primary);
+    //   background-color: var(--color-primary);
+    // }
+
+    // &:active {
+    //   border-color: var(--color-primary);
+    //   background-color: var(--color-active);
+    // }
+  }
 }
 
 
