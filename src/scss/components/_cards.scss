@@ -13,55 +13,9 @@
     display: flex;
     flex-direction: column;
   }
-
-  &-titles {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    &__numbers {
-      display: flex;
-      align-items: flex-end;
-    }
-
-    &__number {
-      margin-bottom: 3px;
-      margin-right: 3px;
-      padding: 0;
-      display: inline-block;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 17px;
-    }
-
-    &__lux {
-      margin-bottom: 3px;
-      margin-left: 9px;
-      padding: 0;
-      display: inline-block;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: var(--color-primary);
-    }
-
-    &__price {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
-      color: var(--color-dark-shade50);
-
-      span {
-        margin-right: 3px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 18px;
-      }
-    }
-  }
 }
 
 @import "./cards/cards-form";
-@import "./cards/cards-left";
-@import "./cards/cards-centered";
+@import "./cards/cards-number";
+@import "./cards/cards-titles";
+@import "./cards/cards-prices";

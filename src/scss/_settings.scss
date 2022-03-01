@@ -229,6 +229,10 @@ a {
   height: 100%;
 }
 
+.choices__list--single .choices__item {
+  color: var(--color-dark-shade75);
+}
+
 .choices[data-type*='select-one']::after {
   right: 15px;
   margin-top: 0;

@@ -1,0 +1,68 @@
+<div class="cards-number cards-number--tree">
+  <form action="#" class="cards-form">
+    <div class="cards-titles">
+      <div class="cards-titles__numbers">
+        <span class="cards-titles__number">№</span>
+        <h3 class="title title--h2 cards-titles__title">888</h3>
+        <span class="cards-titles__lux">Люкс</span>
+      </div>
+      <div class="cards-titles__price"><span>9 990₽</span>в сутки</div>
+    </div>
+    <div class="cards-form__group cards-form__group--header">
+      <label class="form-field cards-form__field">
+        <span class="form-field__caption">Прибытие</span>
+        <input
+          type="date"
+          name="date"
+          class="form-field__input cards-form__date"
+        />
+      </label>
+      <label class="form-field cards-form__field">
+        <span class="form-field__caption">Выезд</span>
+        <input
+          type="date"
+          name="date"
+          class="form-field__input cards-form__date"
+        />
+      </label>
+    </div>
+    <label class="form-field cards-form__select">
+      <span class="form-field__caption">Гости</span>
+      <select name="Number_of_guests" class="form-field__select" required>
+        <option value="">Сколько гостей</option>
+        <option value="One">1 гость</option>
+        <option value="Two">2 гостя</option>
+        <option value="Tree" selected>3 гостя</option>
+        <option value="Four">4 гостя</option>
+      </select>
+    </label>
+    <ul class="list-reset cards-prices">
+      <li class="cards-prices__item">
+        <p class="cards-prices__value">9 990₽ х 4 суток</p>
+        <p class="cards-prices__total">39 960₽</p>
+      </li>
+      <li class="cards-prices__item cards-prices__item--start">
+        <p class="cards-prices__value">Сбор за услуги: скидка 2 179₽</p>
+        <a href="#" class="cards-prices__link"><span>i</span></a>
+        <p class="cards-prices__total">0₽</p>
+      </li>
+      <li class="cards-prices__item cards-prices__item--start">
+        <p class="cards-prices__value">Сбор за дополнительные услуги</p>
+        <a href="#" class="cards-prices__link"><span>i</span></a>
+        <p class="cards-prices__total">300₽</p>
+      </li>
+    </ul>
+    <div class="cards-total">
+      <h3 class="cards-total__title">Итого</h3>
+      <span></span>
+      <p class="cards-total__price">38 081₽</p>
+    </div>
+    <button
+      class="btn-reset btn btn--fill cards-form__btn cards-prices__btn"
+      type="submit"
+    >
+      Забронировать
+      <img src="../img/btn-arrow.svg" alt="Подобрать номер" />
+    </button>
+  </form>
+</div>
