@@ -3,12 +3,6 @@
     margin-bottom: 21px;
   }
 
-  &__field {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
   &__group {
     display: flex;
     justify-content: space-between;
@@ -49,12 +43,25 @@
 
   &__input {
     width: 320px;
-    color: var(--color-dark-shade25);
+    color: var(--color-dark-shade75);
     padding-left: 13px;
+
+    &::placeholder {
+      color: var(--color-dark-shade25);
+    }
+  }
+
+
+  &__field {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   &__date {
-    position: relative;
+    display: block;
     width: 150px;
     padding-left: 13px;
     font-size: 14px;
@@ -62,24 +69,24 @@
     text-transform: uppercase;
     color: var(--color-dark-shade75);
 
-    &::-webkit-calendar-picker-indicator {
+    &--span {
       position: absolute;
-      top: 60%;
-      right: 8px;
+      top: 21px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
       cursor: pointer;
-      padding-left: 100%;
-      transform: translateY(-50%);
-      background-image: url("../../../img/drop-arrow.svg");
+      background-image: url("../../img/drop-arrow.svg");
       background-repeat: no-repeat;
       background-size: 13px;
+      background-position: center right;
     }
 
     &--big {
       width: 320px;
-      color: var(--color-dark-shade25);
 
-      &::-webkit-calendar-picker-indicator {
-        background-image: none;
+      &::placeholder {
+        color: var(--color-dark-shade25);
       }
     }
   }
