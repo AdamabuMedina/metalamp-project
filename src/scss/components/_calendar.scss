@@ -1,0 +1,75 @@
+.datepicker-inline {
+  .datepicker {
+    width: 100%;
+  }
+}
+
+.datepicker {
+  font-family: var(--font-family, sans-serif);
+  border: none;
+  margin-right: 0;
+
+
+  &--nav {
+    margin-bottom: 31px;
+    border-bottom: none;
+
+
+    &-title {
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      text-align: center;
+      color: var(--color-dark-shade);
+    }
+  }
+
+  &--days {
+    &-names {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &--day {
+    &-name {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: initial;
+      color: var(--color-primary);
+
+    }
+  }
+
+  &--cell {
+    &-day {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--color-dark-shade50);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &--buttons {
+    border-top: none;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  &--button {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    justify-content: space-between;
+    flex: 0;
+  }
+}
