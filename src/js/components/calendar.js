@@ -6,7 +6,6 @@ $(dateInput).datepicker({
   clearButton: true,
   todayButton: true,
   multipleDates: 2,
-  // minDate: new Date(),
   toggleSelected: false,
   offset: 5,
   range: true,
@@ -18,5 +17,4 @@ $(dateInput).datepicker({
   navTitles: {
     days: 'MM yyyy',
   },
-  // classes: "cards-number--five"
 })

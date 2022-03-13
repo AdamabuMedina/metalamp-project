@@ -17,4 +17,14 @@
   --color-primary: #bc9cff;
   --color-green: #6fcf97;
   --shadow-primary: 0px 0px 25px rgba(0, 0, 0, 0.2);
+
+  // gradient
+  --gradient-primary: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  --gradient-second: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  --gradient-primary-transparent: linear-gradient(180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%);
+  --gradient-primary-transparent25: linear-gradient(180deg,
+      rgba(188, 156, 255, 0.25) 0%,
+      rgba(139, 164, 249, 0.25) 100%);
 }

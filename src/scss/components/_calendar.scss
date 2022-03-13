@@ -1,6 +1,7 @@
 .datepicker-inline {
   .datepicker {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -8,6 +9,9 @@
   font-family: var(--font-family, sans-serif);
   border: none;
   margin-right: 0;
+  width: 285px;
+  padding: 10px 15px 20px 15px;
+
 
 
   &--nav {
@@ -29,7 +33,7 @@
   &--days {
     &-names {
       margin: 0;
-      margin-bottom: 16px;
+      margin-bottom: 13px;
     }
   }
 
@@ -44,16 +48,9 @@
     }
   }
 
-  &--cell {
-    &-day {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: var(--color-dark-shade50);
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 8px;
+  &--cells {
+    &-days {
+      margin-bottom: 4px;
     }
   }
 
@@ -64,12 +61,103 @@
   }
 
   &--button {
+    padding: 0 10px;
+    flex: 0;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: var(--color-primary);
-    justify-content: space-between;
-    flex: 0;
+  }
+}
+
+.datepicker--cell {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  border-radius: 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-dark-shade50);
+
+  &.-focus- {
+    background: var(--gradient-primary-transparent);
+  }
+
+  &.-current- {
+    font-weight: 700;
+    background: var(--gradient-second);
+    color: var(--color-light);
+
+    &.-in-range- {
+      color: var(--color-light);
+    }
+
+    &.-focus- {
+      color: var(--color-light);
+    }
+  }
+
+  &.-in-range- {
+    color: var(--color-dark-shade50);
+    background: var(--gradient-primary-transparent25);
+    border-radius: 0;
+
+    &.-focus- {
+      background-color: var(--gradient-primary-transparent25);
+    }
+  }
+
+  &.-range-from- {
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 22px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: var(--gradient-primary-transparent25);
+      border-radius: 50% 0 0 50%;
+    }
+  }
+
+  &.-range-to- {
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 22px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: var(--gradient-primary-transparent25);
+      border-radius: 0 50% 50% 0;
+    }
+  }
+
+  &.-selected- {
+    font-weight: 700;
+    background: var(--gradient-primary);
+    border: none;
+    color: var(--color-light);
+
+    &.-current- {
+      background: var(--gradient-primary);
+    }
+
+    &.-focus- {
+      background: var(--gradient-second);
+    }
   }
 }
